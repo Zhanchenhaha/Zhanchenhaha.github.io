@@ -79,17 +79,13 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/04/28/hello-world/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="working and learning">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="working and learning">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T07:49:35.375Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="working and learning">
 
 
 
@@ -119,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/28/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/page/2/">
 
 
 
 
 
-  <title>Hello World | working and learning</title>
+  <title>working and learning</title>
   
 
 
@@ -144,7 +140,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +234,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -252,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/cv2-inRange-函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenhaha">
@@ -269,7 +266,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/26/cv2-inRange-函数/" itemprop="url">cv2.inRange()函数</a></h1>
         
 
         <div class="post-meta">
@@ -281,8 +280,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T20:55:44+08:00">
-                2019-04-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T22:31:30+08:00">
+                2019-04-26
               </time>
             
 
@@ -291,6 +290,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index">
+                    <span itemprop="name">opencv</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -358,16 +379,17 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        
+          
+            <h1 id="cv2-inRange-函数"><a href="#cv2-inRange-函数" class="headerlink" title="cv2.inRange()函数"></a>cv2.inRange()函数</h1><p>cv2.inRange(hsv,lower_red,upper_red)</p>
+<p>函数输入参数有三个</p>
+<p>第一个参数：hsv指的是原图</p>
+<p>第二个参数：lower_red指的是图像中低于这个lower_red的值，图像值变为0</p>
+<p>第三个参数：upper_red指的是图像中高于这个upper_red的值，图像值变为0</p>
+<p>而在lower_red~upper_red之间的值变成255</p>
 
+          
+        
       
     </div>
     
@@ -384,28 +406,12 @@
       
 
       
-      
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/04/28/常用参考网址/" rel="next" title="常用参考网址">
-                <i class="fa fa-chevron-left"></i> 常用参考网址
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -415,11 +421,207 @@
   </article>
 
 
+    
+      
 
-    <div class="post-spread">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/评估度量标准/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenhaha">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="working and learning">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/26/评估度量标准/" itemprop="url">评估度量标准</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T18:02:54+08:00">
+                2019-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/machine-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">machine learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          <span id="busuanzi_container_page_pv">
+            <span class="post-meta-divider">|<span>
+          <span class="post-meta-item-icon">
+          <i class="fa fa-eye"></i>
+          </span>阅读量: <span id="busuanzi_value_page_pv"></span>次
+          </span>
+
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                   字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                   分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </span></span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="评估度量标准"><a href="#评估度量标准" class="headerlink" title="评估度量标准"></a>评估度量标准</h1><p>本文主要介绍一些评估度量，用来评估分类器预测类标号的性能或“准确率”。</p>
+<ul>
+<li>真正例/真阳性（True Positive,TP）：是指被分类正确的正样本。令TP为真正例的个数。</li>
+<li>真负例/真阴性（True Negative,TN）：是指被分类正确的负样本。令TN为真负例的个数。</li>
+<li>假正例/假阳性（False Positive,FP）：被错误标记为正样本的负样本。令FP为假正例的个数。</li>
+<li>假负例/假阴性（False Negative,FN）：被错误标记为负样本的正样本。令FN为假负例的个数。<br>所显示的混淆矩阵是针对二元分类的问题，但是容易用类似的方法给出多类问题的混淆矩阵。</li>
+</ul>
+<h2 id="准确率"><a href="#准确率" class="headerlink" title="准确率"></a>准确率</h2><p>分类器在给定检验集上的准确率是被该分类器正确分类的元组所占的百分比。即<br>$$ accuracy = \frac{TP+TN}{P+N} $$</p>
+<h2 id="错误率或误分率"><a href="#错误率或误分率" class="headerlink" title="错误率或误分率"></a>错误率或误分率</h2><p>$$ error rate = \frac{FP+FN}{P+N} $$</p>
+<p>当考虑类不平衡问题是，其中感兴趣的类是稀少的。也就是说，数据集的分布反应负类显著地占多数，而正类占少数。对医疗数据样本进行分类，97%的准确率使得该分类器看上去相当准确，但是，如果实际只有3%的训练元组是癌症，显然，97%的准确率可能不是可接受的。需要使用其他的度量来评估正确地正元组的情况和正确地识别负元组的情况。可以分别使用灵敏性（也称真正例识别率,sensitivity）和特效性度量（真负例识别率,specificity）。<br>$$ sensitivity = \frac{TP}{P} $$<br>$$ specificity = \frac{TN}{N} $$</p>
+<h2 id="精度（precision）可以看做精确性的度量（即标记为正类的元组实际为正类所占的百分比）"><a href="#精度（precision）可以看做精确性的度量（即标记为正类的元组实际为正类所占的百分比）" class="headerlink" title="精度（precision）可以看做精确性的度量（即标记为正类的元组实际为正类所占的百分比）"></a>精度（precision）可以看做精确性的度量（即标记为正类的元组实际为正类所占的百分比）</h2><p>$$ precision = \frac{TP}{TP+FP} $$</p>
+<h2 id="召回率（recall）是完全性的度量（即正元组标记为正的百分比）"><a href="#召回率（recall）是完全性的度量（即正元组标记为正的百分比）" class="headerlink" title="召回率（recall）是完全性的度量（即正元组标记为正的百分比）"></a>召回率（recall）是完全性的度量（即正元组标记为正的百分比）</h2><p>$$ recall = \frac{TP}{TP+FN} $$</p>
+<p>类C的精度满分1.0意味分类器标记为类C的每个元组都确实属于类C,然而对于被分类器错误分类的类C的元组数，它什么也没告诉我们。类C的召回率满分1.0意味着C的每个元组都被标记为类C，但是并未告诉我们有多少其他元组被不正确地标记属于类C。<br>精度与召回率之间趋向于呈现逆关系，有可能以降低一个为代价而提高另一个。<br>另一种使用精度和召回率的方法是把它们组合到一个度量中，这是F度量（又称为F分数）和F*度量的方法、</p>
+
+          
+        
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -427,10 +629,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -451,17 +649,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -512,22 +701,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -687,10 +860,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
