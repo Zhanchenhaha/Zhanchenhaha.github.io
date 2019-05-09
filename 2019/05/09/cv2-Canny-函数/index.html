@@ -94,20 +94,21 @@
 
 
 
-<meta name="description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) 例子123456import numpy as npimport cv2img = cv2.imread(&amp;apos;dave.jpg&amp;apos;)gray = cv2.cvtColor(img,cv2.COLOR">
+<meta name="description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]])  image：输入图像  threshold1:  minVal  threshold：maxval  aperturesize ：Sobel算子大小，默认为3  L2gradient：为一个布尔值。若为真则使用L">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cv2.Canny()函数">
 <meta property="og:url" content="http://yoursite.com/2019/05/09/cv2-Canny-函数/index.html">
 <meta property="og:site_name" content="working and learning">
-<meta property="og:description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) 例子123456import numpy as npimport cv2img = cv2.imread(&amp;apos;dave.jpg&amp;apos;)gray = cv2.cvtColor(img,cv2.COLOR">
+<meta property="og:description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]])  image：输入图像  threshold1:  minVal  threshold：maxval  aperturesize ：Sobel算子大小，默认为3  L2gradient：为一个布尔值。若为真则使用L">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/hysteresis.jpg">
 <meta property="og:image" content="http://yoursite.com/images/dave.jpg">
 <meta property="og:image" content="http://yoursite.com/images/dave_canny.jpg">
-<meta property="og:updated_time" content="2019-05-09T06:46:02.726Z">
+<meta property="og:updated_time" content="2019-05-09T07:04:53.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cv2.Canny()函数">
-<meta name="twitter:description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) 例子123456import numpy as npimport cv2img = cv2.imread(&amp;apos;dave.jpg&amp;apos;)gray = cv2.cvtColor(img,cv2.COLOR">
-<meta name="twitter:image" content="http://yoursite.com/images/dave.jpg">
+<meta name="twitter:description" content="cv2.Canny()函数cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]])  image：输入图像  threshold1:  minVal  threshold：maxval  aperturesize ：Sobel算子大小，默认为3  L2gradient：为一个布尔值。若为真则使用L">
+<meta name="twitter:image" content="http://yoursite.com/images/hysteresis.jpg">
 
 
 
@@ -371,7 +372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  66 字
+                  241 字
                 </span>
               
 
@@ -409,7 +410,21 @@
 
       
         <h1 id="cv2-Canny-函数"><a href="#cv2-Canny-函数" class="headerlink" title="cv2.Canny()函数"></a>cv2.Canny()函数</h1><p><code>cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]])</code></p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import cv2</span><br><span class="line">img = cv2.imread(&apos;dave.jpg&apos;)</span><br><span class="line">gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">edges = cv2.Canny(gray,50,150,apertureSize =3)</span><br><span class="line">cv2.imwrite(&apos;dave_canny.jpg&apos;,edges)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>image：输入图像</p>
+</li>
+<li><p>threshold1:  minVal</p>
+</li>
+<li><p>threshold：maxval</p>
+</li>
+<li><p>aperturesize ：Sobel算子大小，默认为3</p>
+</li>
+<li><p>L2gradient：为一个布尔值。若为真则使用L2范数进行计算（即对两个方向导数的平方和进行开方），否则使用L1范数（直接将两个方向导数的绝对值相加）</p>
+<p>​    梯度强度大于maxval的任何边缘肯定为边缘，而minVal以下的边缘肯定为非边缘，非边缘被舍弃。位于这两个阈值之间的是基于其连通性的分类边缘或非边缘。如果它们连接到“可靠边缘”像素，则它们被视为边缘的一部分。否则，他们也被丢弃。见下图：</p>
+<p><img src="/images/hysteresis.jpg" alt></p>
+</li>
+</ul>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import cv2</span><br><span class="line">img = cv2.imread(&apos;dave.jpg&apos;)</span><br><span class="line">gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">edges = cv2.Canny(gray,50,150,apertureSize = 3)</span><br><span class="line">cv2.imwrite(&apos;dave_canny.jpg&apos;,edges)</span><br></pre></td></tr></table></figure>
 <p>处理前图片如下图所示</p>
 <p><img src="/images/dave.jpg" alt></p>
 <p>处理后图片如下图所示</p>
@@ -640,7 +655,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.2k</span>
+    <span title="Site words total count">2.4k</span>
   
 </div>
 
