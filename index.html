@@ -274,6 +274,201 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/11/cv-HoughCircles-函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenhaha">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="working and learning">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/11/cv-HoughCircles-函数/" itemprop="url">cv.HoughCircles()函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-11T16:53:18+08:00">
+                2019-05-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index">
+                    <span itemprop="name">opencv</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          <span id="busuanzi_container_page_pv">
+            <span class="post-meta-divider">|<span>
+          <span class="post-meta-item-icon">
+          <i class="fa fa-eye"></i>
+          </span>阅读量: <span id="busuanzi_value_page_pv"></span>次
+          </span>
+
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  338 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </span></span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="cv-HoughCircles-函数"><a href="#cv-HoughCircles-函数" class="headerlink" title="cv.HoughCircles()函数"></a>cv.HoughCircles()函数</h1><p><code>circles=cv.HoughCircles(image, method, dp, minDist[, circles[, param1[, param2[, minRadius[, maxRadius]]]]])</code></p>
+<ul>
+<li>image：8位、单通道、灰度输入图像</li>
+<li>circles：找到圆的输出向量。每个向量编码为3或4个元素的浮点向量$(x,y,radius)(x,y,radius,votes)$</li>
+<li>method：检测方法。目前，唯一实现的方法是HOUGH_GRADIENT</li>
+<li>dp：累加器分辨率与图像分辨率的反比。例如，如果dp=1，则累加器具有与输入图像相同的分辨率。如果dp=2，则累加器的宽度和高度都是一半</li>
+<li>minDist：检测到圆的中心之间的最小距离。如果参数太小，除了一个真实的圆之外，可能错误地检测到多个相邻的圆圈。如果太大，可能会遗漏一些圆。</li>
+<li>param1：第一个特定方法参数。在HOUGH_GRADIENT的情况下，它是传递给canny边缘检测算子的高阀值，而低阀值为高阀值的一半</li>
+<li>param2：第二个特定方法参数。在HOUGH_GRADIENT的情况下，它是检测阶段圆心的累加阀值。它越小，可以检测到更多的假圆。它越大，能通过检测的圆就更加接近完美的圆形。</li>
+<li>minRadius：最小半径</li>
+<li>maxRadius：最大圆半径。如果≤0，则使用最大图像尺寸；如果＜0，则返回中心而不查找半径</li>
+</ul>
+<p>参考网址：<a href="https://blog.csdn.net/tengfei461807914/article/details/77507820" target="_blank" rel="noopener"></a></p>
+<p>​           <a href="https://opencv-python-tutroals.readthedocs.io/en/stable/py_tutorials/py_imgproc/py_houghcircles/py_houghcircles.html" target="_blank" rel="noopener"></a></p>
+<p>​           <a href="https://docs.opencv.org/3.4.3/dd/d1a/group__imgproc__feature.html#ga47849c3be0d0406ad3ca45db65a25d2d" target="_blank" rel="noopener"></a>    </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/cv2-HoughLinesp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1923,194 +2118,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/cv2-copyMakeBorder-函数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Chenhaha">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="working and learning">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/26/cv2-copyMakeBorder-函数/" itemprop="url">cv2.copyMakeBorder()函数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T22:52:11+08:00">
-                2019-04-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/opencv/" itemprop="url" rel="index">
-                    <span itemprop="name">opencv</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          <span id="busuanzi_container_page_pv">
-            <span class="post-meta-divider">|<span>
-          <span class="post-meta-item-icon">
-          <i class="fa fa-eye"></i>
-          </span>阅读量: <span id="busuanzi_value_page_pv"></span>次
-          </span>
-
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  116 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </span></span></div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="为图像扩边（填充）（copyMakeBorder）"><a href="#为图像扩边（填充）（copyMakeBorder）" class="headerlink" title="为图像扩边（填充）（copyMakeBorder）"></a>为图像扩边（填充）（copyMakeBorder）</h1><p>top，bottom，left，right对应边界的像素数目</p>
-<ul>
-<li>cv2.BORDER_CONSTANT添加有颜色的常数值边界，还需要下一个参数（value=边界颜色）</li>
-<li>cv2.BORDER_REFLECT边界元素的镜像。列如：fedcba|abcdefgh|hgfedcb</li>
-<li>cv2.BORDER_REFLECT_101或者cv2.BORDER_DEFAULT跟上面一样，但稍作改动，列如：gfedcb|abcdefgh|gfedcba</li>
-<li>cv2.BORDER_REPLICATE填充，重复最后一个像素。如下所示：<em>aaaaaa | abcdefgh | hhhhhhh</em></li>
-<li><strong>cv2.BORDER_WRAP</strong> - 无法解释，它看起来像这样：cdefgh | abcdefgh | abcdefg</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2161,7 +2168,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2228,7 +2235,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">3k</span>
   
 </div>
 
