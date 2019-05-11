@@ -274,6 +274,200 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/cv2-adaptiveThreshold-函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenhaha">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="working and learning">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/26/cv2-adaptiveThreshold-函数/" itemprop="url">cv2.adaptiveThreshold()函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T22:53:37+08:00">
+                2019-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index">
+                    <span itemprop="name">opencv</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          <span id="busuanzi_container_page_pv">
+            <span class="post-meta-divider">|<span>
+          <span class="post-meta-item-icon">
+          <i class="fa fa-eye"></i>
+          </span>阅读量: <span id="busuanzi_value_page_pv"></span>次
+          </span>
+
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  145 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </span></span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="自适应阀值"><a href="#自适应阀值" class="headerlink" title="自适应阀值"></a>自适应阀值</h1><p>cv2.adaptiveThreshold()</p>
+<p>该函数有6个参数</p>
+<ul>
+<li>第一个原始图像</li>
+<li>第二个像素值上限</li>
+<li>第三个自适应方法Adaptive Method:</li>
+</ul>
+<p>——cv2.ADAPTIVE_THRESH_MEAN_C：领域内均值</p>
+<p>——cv2.ADAPTIVE_THRESH_GAUSSIAN_C：领域内像素点加权和，权重为一个高斯窗口</p>
+<ul>
+<li>第四个值的幅值方法：只有cv2.THRESH_BINARY和cv2.THRESH_BINARY_INV</li>
+<li>第五个Block size：规定领域大小（一个正方形的领域）</li>
+<li>第六个常数C，阀值等于均值或者加权值减去这个常数（为0相当于阀值就是求得领域内均值或者加权值）</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/cv2-copyMakeBorder-函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1119,7 +1313,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  185 字
+                  215 字
                 </span>
               
 
@@ -1169,6 +1363,9 @@
 <p>cv2.THRESH_TRUNC(得到的图像为多像素值)</p>
 <p>cv2.THRESH_TOZERO</p>
 <p>cv2.THRESH_TOZERO_INV</p>
+<p>cv2.THRESH_MASK</p>
+<p>cv2.THRESH_OTSU</p>
+<p>cv2.THRESH_TRIANGLE</p>
 <p>该函数有两个返回值，第一个retVal（得到的阀值值），第二个就是阀值化后的图像。</p>
 <p>阀值类型表：</p>
 <table>
@@ -1193,7 +1390,7 @@
 <tr>
 <td style="text-align:center">2</td>
 <td style="text-align:center">保持原色</td>
-<td style="text-align:center">置灰色</td>
+<td style="text-align:center">置阀值</td>
 </tr>
 <tr>
 <td style="text-align:center">3</td>
@@ -1207,6 +1404,8 @@
 </tr>
 </tbody>
 </table>
+<p>THRESH_OTSU：使用Otsu算法选择阀值</p>
+<p>THRESH_TRIANGLE：使用三角形算法选择最佳阀值</p>
 
           
         
@@ -1671,7 +1870,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1738,7 +1937,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3k</span>
+    <span title="Site words total count">3.2k</span>
   
 </div>
 
